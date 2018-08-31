@@ -6,6 +6,7 @@ use Symfony\Component\Console\Application;
 use App\Commands\Core\MakeCommand;
 use App\Commands\SquareSeries;
 use App\Commands\IncreasePowerSeriesCommand;
+use App\Commands\IncreaseNumberCountCommand;
 
 require_once 'vendor/autoload.php';
 
@@ -16,5 +17,6 @@ $app->add(new MakeCommand);
 $app->add(new SimpleSeries);
 $app->add(new SquareSeries);
 $app->add(new IncreasePowerSeriesCommand);
+$app->add(new IncreaseNumberCountCommand);
 
 $app->run();
