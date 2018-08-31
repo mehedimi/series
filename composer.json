@@ -1,0 +1,12 @@
+{
+    "name": "Meehdi Hasan",
+    "description": "A simple App",
+    "require": {
+        "symfony/console": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}

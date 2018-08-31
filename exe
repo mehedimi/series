@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use App\Commands\SimpleSeries;
+use Symfony\Component\Console\Application;
+use App\Commands\Core\MakeCommand;
+use App\Commands\SquareSeries;
+use App\Commands\IncreasePowerSeriesCommand;
+
+require_once 'vendor/autoload.php';
+
+
+$app = new Application("Calculate Series App", '1.0.0');
+
+$app->add(new MakeCommand);
+$app->add(new SimpleSeries);
+$app->add(new SquareSeries);
+$app->add(new IncreasePowerSeriesCommand);
+
+$app->run();
